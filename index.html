@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>AI Resume Analyzer</h1>
+            <p>Analyze your resume and get smart suggestions</p>
+        </div>
+
+        <!-- Resume Input Section -->
+        <div class="input-section">
+
+            <h2>Paste Your Resume</h2>
+
+            <textarea
+                id="resumeText"
+                placeholder="Paste your resume here..."
+            ></textarea>
+
+            <button id="analyzeBtn">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <!-- Result Section -->
+        <div class="results-section">
+
+            <!-- Resume Score -->
+            <div class="card">
+                <h2>Resume Score</h2>
+
+                <div class="score-box">
+                    <h1 id="score">
+                        0/100
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Skills Found -->
+            <div class="card">
+                <h2>Skills Found</h2>
+
+                <ul id="skillsFound">
+                    <li>No skills analyzed yet</li>
+                </ul>
+            </div>
+
+            <!-- Missing Skills -->
+            <div class="card">
+                <h2>Missing Skills</h2>
+
+                <ul id="missingSkills">
+                    <li>No missing skills</li>
+                </ul>
+            </div>
+
+            <!-- Suggestions -->
+            <div class="card full-width">
+                <h2>Suggestions</h2>
+
+                <div id="suggestions">
+                    Your suggestions will appear here...
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
